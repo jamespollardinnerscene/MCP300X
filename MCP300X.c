@@ -13,6 +13,10 @@ MCP300X_t MCP300X =
 	.Vref = MCP300X_INTERFACE_VREF_DEFAULT,
 };
 
+void MCP300X_DUMMYFUNCTION()
+{
+	printf("MCP300X_DUMMYFUNCTION\n");
+}
 
 bool MCP300X_readSingleEnded(uint8_t chan, uint16_t *val)
 {

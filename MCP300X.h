@@ -37,6 +37,8 @@ typedef struct MCP300X
 
 extern MCP300X_t MCP300X;
 
+void MCP300X_DUMMYFUNCTION();
+
 bool MCP300X_readSingleEnded(uint8_t chan, uint16_t *val);
 bool MCP300X_readSingleEndedVoltage(uint8_t chan, double *V);
 
